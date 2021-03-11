@@ -29,7 +29,7 @@ $grid-gutter-width: 20px;
   Theme Colors
 ———————————–———————————–*/
 
-$default-base: #5F7C8A;
+$default-base:#23303e;
 $red-base: #C46767;
 $pink-base: #D95D87;
 $blue-base: #59A2DD;
@@ -235,8 +235,8 @@ a {
   text-align: center;
 }
 
-.panel-body {
-  height: 280px;
+.panel-body { //post body
+  height: 300px;
   overflow: hidden;
 }
 
@@ -371,8 +371,8 @@ script + p {
 /*++ Resume Content Area +++++++++++++++++++++++*/
 
 .resume-nav {
-  padding-top: 7px;
-  color: #999;
+  padding-top: 10px;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -470,7 +470,7 @@ script + p {
 @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
   .panel-body {
     height: 320px;
-  }
+  } //not this
 }
 
 @media (max-width: $screen-xs-max) {
@@ -512,7 +512,7 @@ script + p {
     float: left;
 
     img {
-      width: 120px;
+      width: 1220px;
       height: 120px;
     }
 
