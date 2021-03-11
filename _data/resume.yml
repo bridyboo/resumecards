@@ -1,22 +1,9 @@
 # IMPORTANT: Set this to false.
-demo: true
+demo: false
 
-# Theme customization is done on this file instead of _config.yml so that
-# you don't have to restart Jekyll to see changes.
+photo: "https://avatars.githubusercontent.com/u/57050319?s=460&u=63f5533812b97264343cf472451bd8b43f824898&v=4"
+name: "Matthew Brian Darmadi"
+copy: "I'm a Software Developer graduate from Seattle University, currently looking for work opportunities and a sponsor."
 
-photo: "https://avatars0.githubusercontent.com/u/2410692?v=2&s=150"
-name: "Elle Kasai"
-# copy: "I'm a UI/UX Developer based in Vancouver, Canada. More than five years of experience in design/development and have a passion for giving back to the local tech community as an instructor."
-copy: "I'm a UI/UX Developer based in Vancouver, Canada. Five years experience in design/development and my specialty is information architecture as well as rapid prototyping with scalable/modular CSS."
 
-# Color scheme based on http://www.materialui.co/colors.
-# Possible values:
-# - default
-# - red
-# - pink
-# - brown
-# - blue
-# - purple
-# - teal
-# - green
 color: default
