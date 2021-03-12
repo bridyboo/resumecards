@@ -39,10 +39,10 @@ $teal-base: #54C2B8;
 $green-base: #6BAB6E;
 
 $all-colors: ("default": ("base": $default-base,
-                          "sub": lighten($default-base, 10%),
-                          "text": darken($default-base, 50%),
+                          "sub":lighten($default-base, 10%),
+                          "text":  darken($default-base, 50%),//rgba(247, 132, 1, 0.993),
                           "muted": grayscale($default-base),
-                          "bg": lighten($default-base, 45%),
+                          "bg": lighten($default-base, 14%), //background color
                           "heading": lighten($default-base, 40%)),
               "red": ("base": $red-base,
                       "sub": lighten($red-base, 20%),
@@ -150,7 +150,7 @@ footer {
 h1, h2, h3, h4, h5, h6,
 .panel-title,
 .resume-contact {
-  color: $color-base;
+  color: darken($color-base, 15%); //resume name and contact logo
 
   @each $color-name in $color-list {
     .theme-#{$color-name} & {
@@ -185,9 +185,9 @@ pre {
 }
 
 a {
-  color: $color-base;
+  color: #d8753a; //hyperlink color here 
   &:hover {
-    color: $color-sub;
+    color: darken(#d8753a, 5%); //hover hyperlink color
   }
 
   @each $color-name in $color-list {
@@ -370,8 +370,8 @@ script + p {
 
 /*++ Resume Content Area +++++++++++++++++++++++*/
 
-.resume-nav {
-  padding-top: 10px;
+.resume-nav { //save pdf button area
+  padding-top: 7px;
   color: rgb(0, 0, 0);
   text-align: center;
 }
@@ -411,7 +411,7 @@ script + p {
 
 .resume-baseinfo {
   p {
-    color: $color-base;
+    color: darken($color-base, 19%); //bio "i'm a software..."
     font-family: "Quando", sans-serif;
     font-size: $font-size-base - 1;
 
