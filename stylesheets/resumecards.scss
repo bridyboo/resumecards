@@ -37,6 +37,7 @@ $purple-base: #8064A7;
 $brown-base: #785447;
 $teal-base: #54C2B8;
 $green-base: #6BAB6E;
+$brian-orange: #d8753a;
 
 $all-colors: ("default": ("base": $default-base,
                           "sub":lighten($default-base, 10%),
@@ -147,7 +148,11 @@ footer {
 
 /* Heading */
 
-h1, h2, h3, h4, h5, h6,
+h1 {
+  color: $brian-orange;
+}
+
+h2, h3, h4, h5, h6,
 .panel-title,
 .resume-contact {
   color: darken($color-base, 15%); //resume name and contact logo
@@ -185,9 +190,9 @@ pre {
 }
 
 a {
-  color: #d8753a; //hyperlink color here 
+  color: $brian-orange; //hyperlink color here 
   &:hover {
-    color: darken(#d8753a, 5%); //hover hyperlink color
+    color: darken($brian-orange, 5%); //hover hyperlink color
   }
 
   @each $color-name in $color-list {
@@ -411,7 +416,7 @@ script + p {
 
 .resume-baseinfo {
   p {
-    color: darken($color-base, 19%); //bio "i'm a software..."
+    color: darken($brian-orange, 5%); //bio "i'm a software..."
     font-family: "Quando", sans-serif;
     font-size: $font-size-base - 1;
 
